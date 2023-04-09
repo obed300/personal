@@ -1,0 +1,15 @@
+img{
+    width: 50%;
+    border-radius: 50%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+@media only screen and (min-width: 375px) {
+    .image{
+        width: 50%;
+    }
+}

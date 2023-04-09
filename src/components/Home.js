@@ -1,12 +1,12 @@
 import React from 'react';
 import { MdForward } from 'react-icons/md';
-import pic from '../img/pic-of-me.jpeg';
 import styles from '../styles/Home.module.css';
+import Imagerotate from './Imagerotate';
 
 const Home = () => (
   <div className={styles.homeWrapper}>
     <div className={styles.wrap}>
-      <img src={pic} alt="My logo" className={styles.picture} />
+      <Imagerotate />
     </div>
     <p className={styles.info}>Hey I&apos;m a fullstack developer based in Ghana!</p>
     <div className={styles.name}>
