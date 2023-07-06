@@ -17,7 +17,7 @@ const Imagerotate = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((currentImageIndex + 1) % images.length);
-    }, 7000); // change image every 5 seconds
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [currentImageIndex]);
