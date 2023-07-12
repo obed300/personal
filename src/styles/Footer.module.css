@@ -1,0 +1,26 @@
+.foot {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 5rem;
+  background-color: rgba(96, 112, 255, 1);
+  margin-top: 20px;
+  width: 375px;
+}
+
+.footText {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (min-width: 375px) {
+  .foot {
+    display: flex;
+    width: 100%;
+  }
+
+  .footText {
+    font-size: 30px;
+  }
+}

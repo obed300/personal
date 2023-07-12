@@ -1,5 +1,8 @@
 import React from 'react';
 import { MdForward } from 'react-icons/md';
+import { AiFillGithub } from 'react-icons/ai';
+import { GrLinkedinOption, GrFacebook } from 'react-icons/gr';
+import { BsTwitter } from 'react-icons/bs';
 import styles from '../styles/Home.module.css';
 import Imagerotate from './Imagerotate';
 
@@ -11,11 +14,11 @@ const Home = () => (
     <p className={styles.info}>Hey I&apos;m a fullstack developer based in Ghana!</p>
     <div className={styles.name}>
       <h1>Obed Bamfo</h1>
-      <p>Full Stack Developer</p>
+      <p className={styles.text}>Full Stack Developer</p>
     </div>
     <section className={styles.about}>
-      <h3>About me</h3>
-      <p>
+      <h3 className={styles.subTitle}>About me</h3>
+      <p className={styles.text}>
         Hello, my name is Obed Bamfo and my ultimate goal is to use my skills in
         software engineering to make a positive impact for environmental organizations
         and solve real-world problems. My background in manual labor at a construction
@@ -28,6 +31,36 @@ const Home = () => (
         Through my experience in remote development, I have gained valuable
         skills in communication and teamwork.
       </p>
+      <div>
+        <h3 className={styles.subTitle}>Search me on</h3>
+        <ul>
+          <li className={styles.media}>
+            <a href="https://github.com/obed300">
+              <AiFillGithub className={styles.social} />
+              Gitbub
+            </a>
+          </li>
+          <li className={styles.media}>
+            <a href="https://www.linkedin.com/in/obedbamfo/">
+              <GrLinkedinOption className={styles.social} />
+              Linkedin
+            </a>
+          </li>
+          <li className={styles.media}>
+            <a href="https://twitter.com/bamfo_obed">
+              <BsTwitter className={styles.social} />
+              Twitter
+            </a>
+          </li>
+          <li className={styles.media}>
+            <a href="https://web.facebook.com/obed.bamfo.5">
+              <GrFacebook className={styles.social} />
+              Facebook
+            </a>
+          </li>
+        </ul>
+
+      </div>
       <button type="button" className={styles.button}>
         My Portfolio
         {' '}

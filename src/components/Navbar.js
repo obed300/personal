@@ -19,8 +19,13 @@ const Navbar = () => (
             Projects
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/contact" className={styles.active}>
+            Contact Me
+          </NavLink>
+        </li>
       </ul>
-      <a href="/" className="hamMenu">
+      <a href="/" className={styles.hamMenu}>
         <GiHamburgerMenu className="menu" />
       </a>
 

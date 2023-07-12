@@ -5,10 +5,14 @@ import pic2 from '../img/pic-of-me3.jpeg';
 import pic3 from '../img/pic-of-me4.jpeg';
 import pic4 from '../img/pic-of-me5.jpeg';
 import pic5 from '../img/pic-of-me6.jpeg';
+import pic6 from '../img/pics 1.jpeg';
+import pic7 from '../img/pics 2.jpeg';
+import pic8 from '../img/pics 3.jpeg';
+import pic9 from '../img/pics 4.jpeg';
 import styles from '../styles/Imagerotate.module.css';
 
 const images = [
-  pic, pic1, pic2, pic3, pic4, pic5,
+  pic, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9,
 ];
 
 const Imagerotate = () => {
