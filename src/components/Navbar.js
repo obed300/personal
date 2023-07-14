@@ -1,37 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdClose } from 'react-icons/md';
+
 import logo from '../img/logo.jpg';
 import styles from '../styles/Navbar.module.css';
 
-const Navbar = () => (
-  <div className={styles.navContainer}>
-    <nav className={styles.navbar}>
-      <img src={logo} alt="My logo" className={styles.logo} />
-      <ul className={styles.navLinks}>
-        <li>
-          <NavLink to="/" className={styles.active}>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects" className={styles.active}>
-            Projects
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className={styles.active}>
-            Contact Me
-          </NavLink>
-        </li>
-      </ul>
-      <a href="/" className={styles.hamMenu}>
-        <GiHamburgerMenu className="menu" />
-      </a>
+const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    </nav>
+  const handleToggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
-  </div>
-);
+  return (
+    <div className={styles.navContainer}>
+      <nav className={styles.navbar}>
+        <img src={logo} alt="My logo" className={styles.logo} />
+        <ul className={`${styles.navLinks} ${isSidebarOpen ? styles.showSidebar : ''}`}>
+          <li>
+            <NavLink exact to="/" className={styles.active}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects" className={styles.active}>
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={styles.active}>
+              Contact Me
+            </NavLink>
+          </li>
+        </ul>
+        <button type="button" className={styles.hamMenu} onClick={handleToggleSidebar}>
+          {isSidebarOpen ? (
+            <MdClose className="close" />
+          ) : (
+            <GiHamburgerMenu className="menu" />
+          )}
+        </button>
+      </nav>
+    </div>
+  );
+};
 
 export default Navbar;
