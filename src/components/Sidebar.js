@@ -1,22 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import styles from '../styles/Sidebar.module.css';
 
-const Sidebar = () => {
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
-    return (
-      <nav className={sidebar ? "sidebar active" : "sidebar"}>
-        <button className="hamburger" type="button" onClick={showSidebar}>
-          <div></div>
-        </button>
-        <ul onClick={showSidebar}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-    );
-  }
-  
+const Sidebar = ({ isSidebarOpen, handleToggleSidebar }) => (
+  <div className={`${styles.sidebar} ${isSidebarOpen ? styles.showSidebar : ''}`}>
+    <ul className={styles.sidebarNavLinks}>
+      <li>
+        <NavLink exact to="/" activeClassName={styles.active} onClick={handleToggleSidebar}>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/projects" activeClassName={styles.active} onClick={handleToggleSidebar}>
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact" activeClassName={styles.active} onClick={handleToggleSidebar}>
+          Contact Me
+        </NavLink>
+      </li>
+    </ul>
+  </div>
+);
 
-export default Sidebar
+Sidebar.propTypes = {
+  isSidebarOpen: PropTypes.bool.isRequired,
+  handleToggleSidebar: PropTypes.func.isRequired,
+};
 
+export default Sidebar;

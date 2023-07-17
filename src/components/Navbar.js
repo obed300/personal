@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
-
 import logo from '../img/logo.jpg';
 import styles from '../styles/Navbar.module.css';
+import Sidebar from './Sidebar';
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,6 +42,7 @@ const Navbar = () => {
           )}
         </button>
       </nav>
+      <Sidebar isSidebarOpen={isSidebarOpen} handleToggleSidebar={handleToggleSidebar} />
     </div>
   );
 };

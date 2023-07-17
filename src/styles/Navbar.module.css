@@ -106,11 +106,6 @@
     display: none;
   }
 
-    .navContainer {
-    width: 100%;
-  }
-
-
   .navLinks {
     display: flex;
     align-items: center;
@@ -119,7 +114,6 @@
   .showSidebar {
     transform: translateX(-100%);
   }
-
 }
 
 
