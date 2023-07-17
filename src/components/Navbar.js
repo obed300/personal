@@ -17,30 +17,30 @@ const Navbar = () => {
     <div className={styles.navContainer}>
       <nav className={styles.navbar}>
         <img src={logo} alt="My logo" className={styles.logo} />
-        <ul className={`${styles.navLinks} ${isSidebarOpen ? styles.showSidebar : ''}`}>
-          <li>
+        <button type="button" className={styles.hamMenu} onClick={handleToggleSidebar}>
+          {isSidebarOpen ? (
+            <MdClose className={`close ${styles.active}`} />
+          ) : (
+            <GiHamburgerMenu className="menu" />
+          )}
+        </button>
+        <ul className={`${styles.sidebarNavLinks} ${isSidebarOpen ? styles.showSidebar : ''}`}>
+          <li className={styles.active}>
             <NavLink exact to="/" className={styles.active}>
               Home
             </NavLink>
           </li>
-          <li>
+          <li className={styles.active}>
             <NavLink to="/projects" className={styles.active}>
               Projects
             </NavLink>
           </li>
-          <li>
+          <li className={styles.active}>
             <NavLink to="/contact" className={styles.active}>
               Contact Me
             </NavLink>
           </li>
         </ul>
-        <button type="button" className={styles.hamMenu} onClick={handleToggleSidebar}>
-          {isSidebarOpen ? (
-            <MdClose className="close" />
-          ) : (
-            <GiHamburgerMenu className="menu" />
-          )}
-        </button>
       </nav>
     </div>
   );
