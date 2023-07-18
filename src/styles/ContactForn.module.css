@@ -1,4 +1,5 @@
 .formContainer {
+  min-width: 360px;
   background-color: rgba(96, 112, 255, 1);
   height: 830px;
   margin-top: 150px;
