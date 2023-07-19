@@ -1,7 +1,7 @@
 .formContainer {
   min-width: 360px;
   background-color: rgba(96, 112, 255, 1);
-  height: 830px;
+  height: 840px;
   margin-top: 150px;
   border-top-left-radius: 70px;
 }
@@ -49,13 +49,13 @@
 
 @media only screen and (min-width: 375px) {
   .formContainer {
+    display: flex;
+    justify-content: center;
     margin-top: 15rem;
-    padding-left: 20%;
-    padding-right: 20%;
-    height: 55rem;
+    height: 59rem;
   }
 
-  .message {
-    height: 9rem;
+  .formWrapper {
+    width: 375px;
   }
 }
