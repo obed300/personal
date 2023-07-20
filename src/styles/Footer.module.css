@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 375px;
   height: 5rem;
   background-color: rgba(96, 112, 255, 1);
   margin-top: 20px;
-  width: 375px;
 }
 
 .footText {
