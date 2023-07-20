@@ -61,11 +61,14 @@ const Home = () => (
         </ul>
 
       </div>
-      <button type="button" className={styles.button}>
+      <a href="projects" className={styles.button}>
+        {' '}
         My Portfolio
         {' '}
+        {' '}
         <MdForward />
-      </button>
+        {' '}
+      </a>
     </section>
   </div>
 );

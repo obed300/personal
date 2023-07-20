@@ -4,9 +4,23 @@ import mathPic from '../img/math-mag.png';
 import budjetPic from '../img/budjet pic.png';
 import stockPic from '../img/Stock listening.png';
 import spacePic from '../img/space_hub.png';
+import todoPic from '../img/todo pic.png';
+import awesomePic from '../img/awesome1.png';
+import oopPic from '../img/oop.png';
 
 const Projects = () => (
   <div className={styles.projectContainer}>
+    <a href="oop" className={styles.link}>
+      <section className={styles.mathSection}>
+        <img src={oopPic} alt="Math Magazine" className={styles.mathPic} />
+        <p className={styles.projectTitle}>School Library</p>
+        <p className={styles.projectAbout}>
+          is a CONSOLE APP that aims to develop a tool for the librarian of OOP University
+          to manage the library collection of books, record borrowing activities,
+          and add new students or teachers in a well-organized and visually appealing way.
+        </p>
+      </section>
+    </a>
     <a href="math" className={styles.link}>
       <section className={styles.mathSection}>
         <img src={mathPic} alt="Math Magazine" className={styles.mathPic} />
@@ -47,7 +61,28 @@ const Projects = () => (
         <p className={styles.projectAbout}>
           is a web application for a company that provides commercial and scientific space travel
           services. The application will allow users to book rockets and join selected space
-          missions..
+          missions.
+        </p>
+      </section>
+    </a>
+    <a href="todo" className={styles.link}>
+      <section className={styles.mathSection}>
+        <img src={todoPic} alt="Math Magazine" className={styles.mathPic} />
+        <p className={styles.projectTitle}>My Todo App</p>
+        <p className={styles.projectAbout}>
+          In this project, I have come out a simple HTML list of To Do tasks which is built
+          using webpack and served by a webpack dev server.
+        </p>
+      </section>
+    </a>
+    <a href="awesome" className={styles.link}>
+      <section className={styles.mathSection}>
+        <img src={awesomePic} alt="Math Magazine" className={styles.mathPic} />
+        <p className={styles.projectTitle}>Awesome Books</p>
+        <p className={styles.projectAbout}>
+          In this project, I built a basic website that allows users to add/remove books
+          from a list. This was achieved by using JavaScript objects and arrays.
+          I also used ES6 syntax.
         </p>
       </section>
     </a>
