@@ -17,7 +17,7 @@ const Home = () => (
       <p className={styles.text}>Full Stack Developer</p>
     </div>
     <section className={styles.about}>
-      <h3 className={styles.subTitle}>About me</h3>
+      <h3 className={styles.subTitle}>About</h3>
       <p className={styles.text}>
         Hello, my name is Obed Bamfo and my ultimate goal is to use my skills in
         software engineering to make a positive impact for environmental organizations
