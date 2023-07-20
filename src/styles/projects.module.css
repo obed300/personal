@@ -1,0 +1,69 @@
+.projectContainer {
+  width: 375px;
+  margin-top: 7rem;
+}
+
+.mathSection {
+  border: 2px solid rgb(119, 109, 109);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+}
+
+.mathSection:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.mathPic {
+  width: 100%;
+  height: 25rem;
+}
+
+.projectTitle {
+  display: flex;
+  font-size: 30px;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+.projectAbout {
+  text-align: center;
+  font-size: 30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15rem;
+    width: 100%;
+  }
+
+  .mathSection {
+    width: 20rem;
+    height: 65rem;
+    margin-left: 10px;
+    padding-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .mathPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 27rem;
+  }
+
+  .projectAbout {
+    text-align: center;
+    font-size: 30px;
+  }
+}
