@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.28ffb08f.css",
+    "main.js": "/static/js/main.ec312f80.js",
+    "static/js/787.88012170.chunk.js": "/static/js/787.88012170.chunk.js",
+    "static/media/stock 1.png": "/static/media/stock 1.bdd44abe1e17ec071bdb.png",
+    "static/media/space_hub.png": "/static/media/space_hub.3ec86f1364195cc042cd.png",
+    "static/media/Stock listening.png": "/static/media/Stock listening.9380bde5b90a723dc9d0.png",
+    "static/media/space 1.png": "/static/media/space 1.5188612a39607054cda3.png",
+    "static/media/pic-of-me5.jpeg": "/static/media/pic-of-me5.c4d731552095c2cfdbb1.jpeg",
+    "static/media/pic-of-me4.jpeg": "/static/media/pic-of-me4.fba40b07681d896aad85.jpeg",
+    "static/media/pic-of-me.jpeg": "/static/media/pic-of-me.1e826fc517e0ea803caf.jpeg",
+    "static/media/pic-of-me3.jpeg": "/static/media/pic-of-me3.53619d39cd413bd0730b.jpeg",
+    "static/media/pics 4.jpeg": "/static/media/pics 4.39c61a8aa4b488b80a27.jpeg",
+    "static/media/pic-of-me2.jpeg": "/static/media/pic-of-me2.035540b17f5c9a88bb3a.jpeg",
+    "static/media/budjeting.png": "/static/media/budjeting.2d4d10f9e098c7feb5d4.png",
+    "static/media/awesome books.png": "/static/media/awesome books.b6f357bef2ec9aa25a4b.png",
+    "static/media/pic-of-me6.jpeg": "/static/media/pic-of-me6.50bdf0710b260a153e7d.jpeg",
+    "static/media/pics 2.jpeg": "/static/media/pics 2.be961f358eb79580be48.jpeg",
+    "static/media/math-mag.png": "/static/media/math-mag.2eede434d539ad3dffc4.png",
+    "static/media/pics 1.jpeg": "/static/media/pics 1.ec42e4a1d036652b1e24.jpeg",
+    "static/media/pics 3.jpeg": "/static/media/pics 3.83583e7e3b96a289ed88.jpeg",
+    "static/media/oop pic.png": "/static/media/oop pic.e89c19bb37045275e09e.png",
+    "static/media/budjet pic.png": "/static/media/budjet pic.2e14d9fdc89e5c2241a7.png",
+    "static/media/awesome1.png": "/static/media/awesome1.40bbfac3b2077cd7b863.png",
+    "static/media/todo pic.png": "/static/media/todo pic.aff448421dd18ee45237.png",
+    "static/media/oop.png": "/static/media/oop.46419b48164ea0e7af16.png",
+    "index.html": "/index.html",
+    "main.28ffb08f.css.map": "/static/css/main.28ffb08f.css.map",
+    "main.ec312f80.js.map": "/static/js/main.ec312f80.js.map",
+    "787.88012170.chunk.js.map": "/static/js/787.88012170.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28ffb08f.css",
+    "static/js/main.ec312f80.js"
+  ]
+}
