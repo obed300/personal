@@ -1,18 +1,17 @@
 .navContainer {
   display: flex;
   justify-content: center;
-  width: 375px;
+  width: 100%;
+  background-color: aqua;
 }
 
 .navbar {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 375px;
 }
 
 .logo {
@@ -84,7 +83,7 @@
   border: none;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-device-width: 600px) {
   .navContainer {
     width: 100%;
   }
@@ -94,8 +93,7 @@
   }
 
   .navbar {
-    width: 95%;
-    position: fixed;
+    width: 100%;
   }
 
   .hamMenu {

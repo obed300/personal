@@ -33,29 +33,25 @@ const Home = () => (
       </p>
       <div>
         <h3 className={styles.subTitle}>Search me on</h3>
-        <ul>
+        <ul className={styles.Socialmedia}>
           <li className={styles.media}>
             <a href="https://github.com/obed300">
               <AiFillGithub className={styles.social} />
-              Gitbub
             </a>
           </li>
           <li className={styles.media}>
             <a href="https://www.linkedin.com/in/obedbamfo/">
               <GrLinkedinOption className={styles.social} />
-              Linkedin
             </a>
           </li>
           <li className={styles.media}>
             <a href="https://twitter.com/bamfo_obed">
               <BsTwitter className={styles.social} />
-              Twitter
             </a>
           </li>
           <li className={styles.media}>
             <a href="https://web.facebook.com/obed.bamfo.5">
               <GrFacebook className={styles.social} />
-              Facebook
             </a>
           </li>
         </ul>

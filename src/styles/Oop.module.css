@@ -1,5 +1,5 @@
 .detailsContainer {
-  width: 375px;
+  width: 100%;
 }
 
 .detailsWrapper {
@@ -29,9 +29,6 @@
   font-size: 30px;
 }
 
-.demo {
-  margin-left: 10px;
-}
 
 .react {
   font-size: 50px;
